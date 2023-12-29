@@ -33,7 +33,6 @@ static int __init hello_init(void)
 	} else if (hello_counter > 10) {
 		pr_err("Parameter is larger than 10.\n");
 		BUG_ON(1);
-		return -EINVAL;
 	}
 
 
